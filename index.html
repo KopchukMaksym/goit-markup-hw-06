@@ -452,6 +452,21 @@
                     </a></li>
           </ul>
       </div> 
+
+        <form class="footer-form">
+          <label class="subscribe footer-label">
+          Подпишитесь на рассылку
+            <input class="footer-email-input" type="email" name="email" placeholder="E-mail">
+            </label>
+            <button class="button fotter-button" type="submit">
+              Подписаться
+              <svg class="footer-icon"
+              width="24px"
+              height="24px">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+        </form>
     </div>
   </footer>
 
@@ -459,6 +474,64 @@
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+
+
+    <div class="modal-container"  role="group" aria-labelledby="contact-details-head">
+        <p class="modal-title" id="contact-details-head">Оставьте свои данные, мы вам перезвоним</p>
+      <form class="modal-form">
+
+        <label class="label">
+          Имя
+          <input class="modal-input" type="text" name="name" autofocus>
+        <svg class="modal-icon"
+          width="18px"
+          height="18px">
+          <use href="./images/icons.svg#icon-person-black">
+          </use>
+        </svg>
+        </label>
+
+        <label class="label">
+          Телефон
+          <input class="modal-input" type="tel" name="phone_number">
+        <svg class="modal-icon"
+          width="18px"
+          height="18px">
+          <use href="./images/icons.svg#icon-phone-black"></use>
+        </svg>
+        </label>
+
+        <label class="label">
+          Почта
+          <input class="modal-input" type="email" name="email">
+        <svg class="modal-icon"
+          width="18px"
+          height="18px">
+          <use href="./images/icons.svg#icon-email-black"></use>
+        </svg>
+        </label>
+
+        <label class="label">
+          Комментарий
+        <textarea  class="textarea" name="Comment" rows="6" placeholder="Введите текст"></textarea>
+        </label>
+
+        <label class="label agreement">
+          <input class="input-checkbox visually-hidden" type="checkbox" name="consent" value="consent">
+          <span class="fake">
+            <svg class="icon-fake"
+            width="11px"
+            height="8px">
+              <use href="./images/icons.svg#icon-Vector"></use>
+            </svg>
+          </span>
+          Соглашаюсь с рассылкой и принимаю&nbsp   
+          <a class="agreement-link" href="/">Условия договора</a>
+          </label>
+
+        <button class=" modal-button button" type="submit">Отправить</button>
+      </form>
+    </div>
       <button class="modal-close" type="button" data-modal-close>
         <svg class="modal-close-icon"
         width="18px"
