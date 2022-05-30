@@ -659,6 +659,7 @@ display: flex;
   margin-top: 20px;
 
   background: var(--background-color);
+  color: var(--background-color-for-hero);
 
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -802,6 +803,10 @@ fill: var(--primary-white-color);
 
 }
 
+.textarea {
+margin-bottom: 10px
+}
+
 .modal-input {
   padding: 12px 10px 12px 42px;
   margin-top: 4px;
@@ -814,12 +819,10 @@ fill: var(--primary-white-color);
   
 }
 
-.modal-input:hover,
 .modal-input:focus {
   border-color: var(--accent-color);
 }
 
-.modal-input:hover +.modal-icon,
 .modal-input:focus +.modal-icon{
   fill: var(--accent-color);
 }
@@ -827,13 +830,15 @@ fill: var(--primary-white-color);
 .modal-icon {
   padding: 0;
   position: absolute;
-  top: 27px;
+  top: 50%;
   left: 12px;
+
 
   fill: var(--title-text-color);
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
   transition-property: fill;
+
 }
 
 
@@ -854,7 +859,7 @@ fill: var(--primary-white-color);
   resize: none;
 }
 
-.textarea:hover,
+
 .textarea:focus {
 border-color: var(--accent-color);
 }
@@ -912,7 +917,6 @@ border-color: var(--accent-color);
   align-items:center ;
   text-align: center;
   margin-bottom: 30px ;
-  margin-top: 10px;
 
   font-weight: 400;
   font-size: 14px;
