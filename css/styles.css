@@ -630,7 +630,10 @@ display: flex;
 /* footer-modal */
 
 .footer-form-container {
+  display: flex;
+  flex-direction: column;
   margin-left: 93px;
+  width: 570px;
 
 }
 
@@ -638,8 +641,7 @@ display: flex;
 .footer-form {
   display: flex;
   align-items: flex-end;
-  justify-content: center;
-  width: 570px;
+
 
 }
 
@@ -662,6 +664,7 @@ display: flex;
 .footer-email-input {
   font-size: 16px;
   padding: 15px 10px 15px 16px;
+  width: 100%;
 
   background: var(--background-color);
   color: var(--background-color-for-hero);
@@ -729,7 +732,6 @@ fill: var(--primary-white-color);
 .modal {
   position: absolute;
   width: 528px;
-  height: 581px;
   top:50%;
   left:50%;
   transform: translate(-50%,-50%);
@@ -812,12 +814,8 @@ fill: var(--primary-white-color);
   letter-spacing: 0.01em;
 
   color: var(--grey);
-
 }
 
-.textarea {
-margin-bottom: 10px
-}
 
 .modal-input {
   padding: 12px 10px 12px 42px;
@@ -856,9 +854,8 @@ margin-bottom: 10px
 
 
 .textarea {
-  padding: 12px 16px;
+  padding: 11px 16px;
   margin-top: 4px;
-
   outline: transparent;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -933,6 +930,8 @@ border-color: var(--accent-color);
   align-items:center ;
   text-align: center;
   margin-bottom: 30px ;
+  margin-top: 10px;
+
 
   font-weight: 400;
   font-size: 14px;
