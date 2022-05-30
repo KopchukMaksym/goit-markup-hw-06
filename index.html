@@ -453,20 +453,22 @@
           </ul>
       </div> 
 
+      <div class="footer-form-container">
+        <p class="subscribe footer-form-title">Подпишитесь на рассылку</p>
         <form class="footer-form">
-          <label class="subscribe footer-label">
-          Подпишитесь на рассылку
+          <label class=" footer-label">
             <input class="footer-email-input" type="email" name="email" placeholder="E-mail">
-            </label>
-            <button class="button fotter-button" type="submit">
-              Подписаться
-              <svg class="footer-icon"
+          </label>
+          <button class="button fotter-button" type="submit">
+            Подписаться
+            <svg class="footer-icon"
               width="24px"
               height="24px">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
         </form>
+      </div>
     </div>
   </footer>
 
@@ -517,8 +519,8 @@
         </label>
 
         <label class="label agreement">
-          <input class="input-checkbox visually-hidden" type="checkbox" name="consent" value="consent">
-          <span class="fake">
+          <input class="input-checkbox visually-hidden" id="user-checkbox" tabindex="-1" type="checkbox" name="consent" value="consent">
+          <span class="fake" aria-labelledby="user-checkbox" tabindex="0">
             <svg class="icon-fake"
             width="11px"
             height="8px">
